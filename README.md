@@ -20,4 +20,4 @@ AI-powered Career Management Platform for Students.
 
 ## Developer
 
-Aarushitha Reddy
+**Aarushi Reddy**
