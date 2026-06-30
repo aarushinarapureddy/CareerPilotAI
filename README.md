@@ -1,9 +1,6 @@
 # CareerPilot AI
-
 AI-powered Career Management Platform for Students.
-
 ## Tech Stack
-
 - Python
 - Django
 - HTML
@@ -13,11 +10,11 @@ AI-powered Career Management Platform for Students.
 - SQLite
 - Git
 - GitHub
-
 ## Status
-
-🚀 Project Started
-
+Project Started
 ## Developer
-
 **Aarushi Reddy**
+## Progress
+- Git Setup 
+- Django Setup 
+- Accounts App 
