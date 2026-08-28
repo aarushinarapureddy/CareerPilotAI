@@ -1,3 +1,46 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: #0f1117;
+    color: #f5f7fa;
+}
+/* =========================
+   Navigation
+   ========================= */
+
+.career-navbar {
+    background: #151821;
+    border-bottom: 1px solid #292e39;
+    padding: 16px 0;
+}
+
+.career-brand {
+    color: #f5f7fa !important;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.career-nav-link {
+    color: #aeb6c5 !important;
+    font-size: 15px;
+}
+
+.career-nav-link:hover {
+    color: #ffffff !important;
+}
+
+.career-register-btn {
+    background: #4f7cff;
+    color: white !important;
+    border-radius: 8px;
+    padding: 9px 18px;
+    border: none;
+}
+
+.career-register-btn:hover {
+    background: #416ee8;
+}
 :root {
     --bg-main: #0b0f14;
     --bg-card: #111820;
@@ -87,4 +130,162 @@ body {
 .auth-footer a {
     color: var(--accent);
     text-decoration: none;
+}
+/* =========================
+   Register Page
+   ========================= */
+
+.auth-page {
+    min-height: calc(100vh - 72px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    background: #0f1117;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 460px;
+    background: #171a21;
+    border: 1px solid #292e39;
+    border-radius: 16px;
+    padding: 38px;
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+}
+
+.auth-card h1 {
+    margin-bottom: 8px;
+    color: #f5f7fa;
+    font-size: 30px;
+}
+
+.auth-subtitle {
+    color: #9aa3b2;
+    margin-bottom: 28px;
+}
+
+.auth-card label {
+    display: block;
+    margin-bottom: 8px;
+    color: #d9dee7;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.auth-card input {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 18px;
+    border: 1px solid #343a46;
+    border-radius: 9px;
+    background: #101319;
+    color: #f5f7fa;
+    font-size: 15px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.auth-card input:focus {
+    border-color: #4f7cff;
+    box-shadow: 0 0 0 3px rgba(79, 124, 255, 0.12);
+}
+
+.auth-card ul {
+    color: #8f98a8;
+    font-size: 13px;
+    padding-left: 18px;
+    margin-top: -8px;
+    margin-bottom: 20px;
+}
+
+.auth-button {
+    width: 100%;
+    border: none;
+    border-radius: 9px;
+    padding: 13px;
+    background: #4f7cff;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.auth-button:hover {
+    background: #416ee8;
+    transform: translateY(-1px);
+}
+
+.auth-footer {
+    text-align: center;
+    margin-top: 22px;
+    color: #8f98a8;
+    font-size: 14px;
+}
+
+.auth-footer a {
+    color: #6f94ff;
+    text-decoration: none;
+}
+
+.auth-footer a:hover {
+    text-decoration: underline;
+}
+/* =========================
+   Registration Form Fields
+========================= */
+
+.auth-header {
+    margin-bottom: 28px;
+}
+
+.auth-label {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: #6f94ff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #d9dee7;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.form-group input {
+    margin-bottom: 0;
+}
+
+.field-help {
+    margin-top: 7px;
+    color: #747e8f;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.field-help ul {
+    margin: 6px 0 0;
+    padding-left: 18px;
+    color: #747e8f;
+    font-size: 12px;
+}
+
+.field-error {
+    margin-top: 7px;
+    color: #f87171;
+    font-size: 13px;
+}
+
+.auth-footer {
+    border-top: 1px solid #292e39;
+    padding-top: 20px;
 }

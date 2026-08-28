@@ -1,33 +1,55 @@
 {% extends "base.html" %}
 
-{% block title %}Create Account{% endblock %}
-
 {% block content %}
 
 <div class="auth-page">
 
     <div class="auth-card">
 
-        <h1>Create your account</h1>
+        <div class="auth-header">
+            <span class="auth-label">CAREERPILOT AI</span>
 
-        <p class="auth-subtitle">
-            Start building your career with CareerPilot AI.
-        </p>
+            <h1>Create your account</h1>
 
-        <form method="POST">
+            <p class="auth-subtitle">
+                Start building your career with CareerPilot AI.
+            </p>
+        </div>
+
+        <form method="post">
             {% csrf_token %}
 
-            {{ form.as_p }}
+            {% for field in form %}
+                <div class="form-group">
+
+                    {{ field.label_tag }}
+
+                    {{ field }}
+
+                    {% if field.help_text %}
+                        <div class="field-help">
+                            {{ field.help_text|safe }}
+                        </div>
+                    {% endif %}
+
+                    {% for error in field.errors %}
+                        <div class="field-error">
+                            {{ error }}
+                        </div>
+                    {% endfor %}
+
+                </div>
+            {% endfor %}
 
             <button type="submit" class="auth-button">
                 Create Account
             </button>
         </form>
 
-        <p class="auth-footer">
+        <div class="auth-footer">
             Already have an account?
             <a href="#">Sign in</a>
-        </p>
+        </div>
 
     </div>
 
