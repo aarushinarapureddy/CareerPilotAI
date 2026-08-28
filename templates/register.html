@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}Create Account{% endblock %}
+
+{% block content %}
+
+<div class="auth-page">
+
+    <div class="auth-card">
+
+        <h1>Create your account</h1>
+
+        <p class="auth-subtitle">
+            Start building your career with CareerPilot AI.
+        </p>
+
+        <form method="POST">
+            {% csrf_token %}
+
+            {{ form.as_p }}
+
+            <button type="submit" class="auth-button">
+                Create Account
+            </button>
+        </form>
+
+        <p class="auth-footer">
+            Already have an account?
+            <a href="#">Sign in</a>
+        </p>
+
+    </div>
+
+</div>
+
+{% endblock %}
